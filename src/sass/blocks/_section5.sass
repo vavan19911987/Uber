@@ -1,0 +1,49 @@
+.require
+    padding: 68px 0 84px 0
+    &__block
+        margin: 33px 0
+        &__nmb
+            margin-bottom: 0px
+    &__title
+        font-size: 22px
+        line-height: 24px
+        font-weight: 400
+        color: #1ca8c3
+    &__list
+        list-style-type: none
+        padding-left: 50px
+        padding-top: 22px
+        li
+            //! display: inline-block
+            position: relative
+            margin-bottom: 10px
+            font-size: 17px
+            font-weight: 300
+            color: #222222
+            &:before
+                content: ''
+                //! display: inline-block
+                //! vertical-align: middle
+                //! transform: translate(-12px, -1px)
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                //! transform: translateY(-50%)
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+
+    &__descr
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+    .warning
+        .require__title
+            color: $second-color
+        .require__list
+            li
+                &::before
+                    background: url('../icons/check_red.svg') center (center / cover) no-repeat

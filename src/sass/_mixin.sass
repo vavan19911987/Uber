@@ -1,0 +1,19 @@
+=btn__hover
+    &:hover
+        background-image: none
+        background-color: $main-color
+=call
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        display: block
+        margin-top: 18px
+        height: 1px
+        width: 0%
+        background-color: #fff
+        transition: 0.8s all
+    &:hover
+        &::before
+            width: 100%
+            background-color: red

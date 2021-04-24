@@ -1,0 +1,66 @@
+.mobile
+	min-height: 864px
+	padding: 48px 0 79px 0
+	background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+	.row
+		margin-top: 32px
+	&__item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 91px
+
+		&__1
+			background: url('../img/mobail/Карточка 1.jpg') center (center / cover) no-repeat
+		&__2
+			background: url('../img/mobail/Карточка 2.jpg') center (center / cover) no-repeat
+		&__3
+			background: url('../img/mobail/Карточка 3.jpg') center (center / cover) no-repeat
+		&__4
+			background: url('../img/mobail/Карточка 4.jpg') center (center / cover) no-repeat
+		&__5
+			background: url('../img/mobail/Карточка 5.jpg') center (center / cover) no-repeat
+		&__6
+			background: url('../img/mobail/Карточка 6.jpg') center (center / cover) no-repeat
+		&__subtitle
+			font-size: 24px
+			line-height: 31px
+			font-weight: 400
+			text-transform: uppercase
+			color: #ffffff
+			text-align: center
+		&__plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 26px
+			height: 26px
+			background-color: #000000
+			margin: 0 auto
+			border-radius: 100%
+			&::before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+			&::after
+				content: ''
+				position: absolute
+				// left: 50%
+				// transform: translateX(-50%)
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $main-color
+			&:hover
+				cursor: pointer
+				&::before, &::after
+					background-color: $second-color
+					transition: 0.3s all
