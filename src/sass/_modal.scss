@@ -47,6 +47,13 @@
     &_mini {
         min-height: 140px;
     }
+    &_min {
+        min-height: 140px;
+
+        &:last-child {
+            font-size: 30px;
+        }
+    }
     &__close {
         position: absolute;
         top: 0;
@@ -73,7 +80,7 @@
         text-transform: uppercase;
     }
 }
-#order, #thanks {
+#order, #thanks, #plus {
     display: none;
 }
 

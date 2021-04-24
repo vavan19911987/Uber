@@ -49,7 +49,15 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     $('.modal__close').on('click', function () {
-        $('.overlay, #thanks, #order').fadeOut('slow');
+        $('.overlay, #thanks, #order, #plus').fadeOut('slow');
+    });
+
+    $('.mobile__item__plus').each(function(i) {
+        $(this).on('click', function() {
+            $('#plus .modal__subtitle').text($('.mobile__item__subtitle').eq(i).text());
+            $('.overlay, #plus').fadeIn('slow');
+        });
+
     });
 
 

@@ -1,0 +1,136 @@
+.pix {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 490px;
+    left: 1000px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'Москва';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 27px;
+        margin-top: 4px;
+    }
+}
+
+.deutschland {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 470px;
+    left: 857px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'Германия';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 33px;
+        margin-top: 4px;
+    }
+}
+.egypt {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 340px;
+    left: 910px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'Египет';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 23px;
+        margin-top: 4px;
+    }
+}
+.newyork {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 427px;
+    left: 500px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'NewYork';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 27px;
+        margin-top: 4px;
+    }
+}
+.uruguay {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 517px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'Uruguay';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 27px;
+        margin-top: 4px;
+    }
+}
+
+.sydney {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 115px;
+    left: 1370px;
+    animation: puls 1.5s infinite ease-in-out;
+    &::after {
+        content: 'Sydney';
+        color: #fff;
+        display: block;
+        position: relative;
+        right: 27px;
+        margin-top: 4px;
+    }
+}
+
+
+
+
+
+
+@keyframes puls {
+    0% {
+        background-color: #fff;
+
+    }
+    30% {
+        background-color: #1203f9;
+
+    }
+    60% {
+        background-color: #20f903;
+
+    }
+
+    100% {
+        background-color: #fff;
+
+    }
+}
+
