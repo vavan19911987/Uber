@@ -12,6 +12,46 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
-        })
-    })
-})
+        });
+    });
+
+    $('input[name=phone]').mask('+7(999) 999-99-99');
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+
+            },
+            messages: {
+                name: "Пожалуйста введите своё Имя",
+                phone: "Пожалуйста введите свой телефон",
+                email: {
+                    required: "Пожалуйста введите свой постовый адрес",
+                    email: "Неправильно введён адрес почты"
+                }
+            }
+        });
+    }
+
+    validateForm('form');
+
+    $('[data-modal=subheader]').on('click', function () {
+        $('.overlay, #thanks').fadeIn('slow');
+    });
+    $('[data-modal=promo]').on('click', function () {
+        $('.overlay, #order').fadeIn('slow');
+    });
+
+    $('.modal__close').on('click', function () {
+        $('.overlay, #thanks, #order').fadeOut('slow');
+    });
+
+
+
+});
